@@ -1,17 +1,29 @@
-# Desafio Postulantes
+# Desafio Fapro
 
-Con el fin de seleccionar a nuestros 2 developers, tenemos el siguente desafio.
+## Scrapping de datos de una URL en específico
 
-De la siguente URL [Link](https://www.sii.cl/servicios_online/1047-nomina_inst_financieras-1714.html) es necesario crear un código que sea capaz de parsear la pagina web y devolver un json con esta información.
-![image](https://user-images.githubusercontent.com/3030497/164536276-9eb79d10-4fb0-4943-a15f-2536a8586330.png)
+Se utilizó el siguente URL [Link](https://www.sii.cl/servicios_online/1047-nomina_inst_financieras-1714.html).
 
-El JSON de respuesta puede venir en el formato que estimes conveniente.
+Obs: se requiere utilizar el navegador de Google Chrome.
 
-## Preguntas Frecuentes
+### Instalación y ejecución
 
-- Tipos de entrega, cualquiera de los siguiente sirve
-  - API caso generico
-  - API caso particular
-  - Script para el caso particular
-- Lenguaje: El que más te guste
-- Plazo de Entrega: Indefinido, iremos entrevistando a los que van terminando primero.
+1. Descargue o clone el proyecto.
+2. Ejecutar en la consola, en la carpeta del proyecto:
+~~~
+python3 -m venv .env
+~~~
+3. Inicialice el ambiente virtual
+~~~
+source ./.env/bin/activate
+~~~
+4. Instale los requerimentos
+~~~
+pip install -r requirements.txt
+~~~
+5. Ejecute el programa
+~~~
+python3 main.py
+~~~
+
+Se imprimirán en consola los datos en formato DataFrame y en JSON, luego se generará un archivo .csv
